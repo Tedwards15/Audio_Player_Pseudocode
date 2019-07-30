@@ -2,13 +2,13 @@ Initialization
 While( 1 )
 {
 	Release Control Semaphore
-  If ( Not Stopped )
-	  Open audio file, begin streaming
-  While ( Not Stopped )
-  {
+  	If ( Not Stopped )
+	  	Open audio file, begin streaming
+  	While ( Not Stopped )
+  	{
 		If ( Playing )
 			Read from file, update audio buffer ( 1 and 2 alternatively )
-    Else if ( Paused )
+    		Else if ( Paused )
 			Fill audio buffer ( 1 or 2 ) with nonsense, mute output
 		Resolve Events, Semaphores and Messages
   }
