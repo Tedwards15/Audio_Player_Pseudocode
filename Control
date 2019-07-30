@@ -1,0 +1,16 @@
+Initialization
+While( 1 )
+{
+	Get Semaphore
+	Get Character from GUI
+If ( Play Character )
+Get file name, enter Playing State
+If ( Pause Character )
+	Toggle Mode, Playing/Paused State
+If ( Stop Character )
+	Enter Stopped State
+If ( List Files Character )
+	List Files
+If ( Set Port Character )
+	Set Port
+}
